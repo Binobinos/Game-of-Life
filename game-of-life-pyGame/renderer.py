@@ -32,8 +32,8 @@ class Text:
             text_surface = font.render(str(text), True, color)
             self._cache[key] = text_surface
         if x == "center":
-            x = (self.screen.width // 2) - (self._cache[key].width // 2)
+            x = (self.screen.get_width() // 2) - (self._cache[key].width // 2)
         if y == "center":
-            x = (self.screen.height // 2) - (self._cache[key].height // 2)
+            x = (self.screen.get_height()  // 2) - (self._cache[key].height // 2)
         self.screen.blit(self._cache[key], (x, y))
 
