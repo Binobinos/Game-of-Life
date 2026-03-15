@@ -8,4 +8,4 @@ class Display:
         self.HEIGHT = 700
         self.FPS = 120
 
-        self.window_name = "Game of Life"
+        self.window_caption = "Game of Life"

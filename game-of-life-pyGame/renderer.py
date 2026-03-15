@@ -9,7 +9,7 @@ class Renderer:
     def __init__(self):
         self.display = Display()
         self.screen = pygame.display.set_mode((self.display.WIDTH, self.display.HEIGHT))
-        pygame.display.set_caption(self.display.window_name)
+        pygame.display.set_caption(self.display.window_caption)
         self.text = Text(self.screen)
         self.scene0 = Scene0(self.display, self.screen, self.text)
 
