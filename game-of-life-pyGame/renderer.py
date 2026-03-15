@@ -1,6 +1,7 @@
 """file: renderer.py"""
 from display import Display
-from game_scene.scene0 import Scene0
+from game_scene.global_scene import Scene0
+
 import pygame
 
 class Renderer:
@@ -9,11 +10,12 @@ class Renderer:
         self.display = Display()
         self.screen = pygame.display.set_mode((self.display.WIDTH, self.display.HEIGHT))
         self.text = Text(self.screen)
+        self.scene0 = Scene0(self.display, self.screen, self.text)
 
-    def update(self):
+    def update(self, dt, clock):
         """рендер"""
-        self.screen.fill((255, 255, 255))
-        self.text.render()
+        self.screen.fill((0, 0, 0))
+        self.scene0.render(dt, clock)
         pygame.display.flip()
 
 

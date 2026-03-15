@@ -38,7 +38,7 @@ class Engine:
                 if event.type == pygame.QUIT:
                     self.run = False
 
-            self.renderer.update()
+            self.renderer.update(self.dt, self.clock)
             self.fps_tick()
 
         pygame.quit()
