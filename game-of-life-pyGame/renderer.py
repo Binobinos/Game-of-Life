@@ -1,5 +1,6 @@
 """file: renderer.py"""
 from display import Display
+from game_scene.scene0 import Scene0
 import pygame
 
 class Renderer:
