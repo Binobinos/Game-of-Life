@@ -13,7 +13,7 @@ class Engine:
         self.display = self.renderer.display
 
         #time
-        self.clock = pygame.Clock()
+        self.clock = pygame.time.Clock()
         self.last_time = pygame.time.get_ticks()
         self.dt = 0
 

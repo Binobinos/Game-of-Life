@@ -31,5 +31,7 @@ class Text:
             font = pygame.font.SysFont(font, size)
             text_surface = font.render(str(text), True, color)
             self._cache[key] = text_surface
+        if x == "center":
+            pass
         self.screen.blit(self._cache[key], (x, y))
 
