@@ -1,5 +1,4 @@
 """тестовый файл"""
-import pygame
 
 class Scene0:
 
