@@ -7,3 +7,5 @@ class Display:
         self.WIDTH = 1200
         self.HEIGHT = 700
         self.FPS = 120
+
+        self.window_name = "Game of Life"
